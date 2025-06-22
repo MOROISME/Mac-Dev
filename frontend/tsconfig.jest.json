@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest", "@testing-library/jest-dom", "node"],
+
+    // ⛔ ts-jest が対応していないオプションは除外
+    "verbatimModuleSyntax": false,
+    "moduleDetection": "legacy",
+    "erasableSyntaxOnly": false
+  },
+  "include": ["src"]
+}
